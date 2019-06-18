@@ -1,0 +1,55 @@
+.sword {
+  width: 500px;
+  position: relative;
+}
+
+.sword-top {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 39%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid rgb(241, 241, 241);
+}
+
+.sword-left {
+  position: absolute;
+  top: 37%;
+  left: 0;
+  width: 95%;
+  height: 12%;
+  z-index: -1;
+  background-color: #e8e8e8;
+}
+
+.sword-right {
+  position: absolute;
+  bottom: 39%;
+  left: 0;
+  width: 95%;
+  height: 12%;
+  z-index: -1;
+  background-color: #cacaca;
+}
+
+.sword-bottom {
+  top: 25%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  border-bottom-color: #e8e8e8;
+  position: absolute;
+}
+
+.sword-bottom:after {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 24px;
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  border-top-color: #e8e8e8;
+}
